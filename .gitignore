@@ -1,0 +1,68 @@
+# ============ 本仓库性质：Python 抓取脚本 + 数据存档 ============
+# 已提交的 8 个 .parquet 与 700+ 个 .md 属于项目数据，刻意保留跟踪，故不忽略。
+
+# ============ Python 字节码 / 缓存 ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ============ 打包 / 构建产物 ============
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# ============ 虚拟环境 ============
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ============ 测试 / 静态检查缓存 ============
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+
+# ============ Jupyter ============
+.ipynb_checkpoints/
+
+# ============ 环境变量（含 API Key，务必不要提交） ============
+.env
+.env.local
+.env.*.local
+*.env.bak
+
+# ============ 运行时锁文件（避免多进程重复抓取） ============
+/lock/
+*.lock
+
+# ============ 日志（保留 logger 模块，忽略运行输出） ============
+*.log
+logs/
+
+# ============ 编辑器 / IDE ============
+.vscode/
+.idea/
+*.iws
+*.iml
+*.ipr
+*.swp
+*.swo
+*~
+
+# ============ 操作系统 ============
+.DS_Store
+Thumbs.db
+desktop.ini
+/.workbuddy
+
+# ============ 文件 ============
+/.data
