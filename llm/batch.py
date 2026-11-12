@@ -36,7 +36,7 @@ BATCH_REGISTRY_PATH = os.path.join(BASE_DIR, "summary", "batch_id.json")
 PROMPT_PATH = os.path.join(BASE_DIR, "prompt", "prompt.md")
 
 # 批次最多多少篇拆一个 batch（OpenRouter/性价比上限，超出拆多批全提交）
-BATCH_CHUNK_SIZE = 50
+BATCH_CHUNK_SIZE = 200
 
 # 不同业务（来源）区分：data 文件 与 summary 目录键。后台 job 靠它回写 llmDone 与落库。
 # data 路径统一由 common.paths 生成绝对路径，实际文件位于 <root>/.data/{业务键}.parquet
