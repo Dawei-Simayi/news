@@ -71,9 +71,9 @@ LLMProvider.DEEP_SEEK = LLMProvider(
 LLMProvider.OPEN_ROUTER = LLMProvider(
     api_key_env="OPEN_ROUTER_API_KEY",
     base_url="https://openrouter.ai",
-    model="z-ai/glm-5.3-flash",
-    models=["z-ai/glm-5.3-flash"],
-    batch_model="z-ai/glm-5.3-flash",
+    model="deepseek/deepseek-v4-flash-0731:batch",
+    models=["deepseek/deepseek-v4-flash-0731:batch"],
+    batch_model="deepseek/deepseek-v4-flash-0731:batch",
     trust_env= False,
     provider_options={
         "sort": "price",
